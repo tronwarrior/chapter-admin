@@ -1,4 +1,11 @@
 ChapterAdmin::Application.routes.draw do
+  resources :user_sessions
+
+  root      :to => "home#index"
+  resources :users
+  resource  :account, :controller => "users"
+  resource  :user_session
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
