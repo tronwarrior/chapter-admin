@@ -5,6 +5,7 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'authlogic'
+gem "rails3-generators"
 gem 'pg', '0.9.0'
 
 group :cucumber do

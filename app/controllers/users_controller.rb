@@ -3,10 +3,12 @@ class UsersController < ApplicationController
   before_filter :require_user, :only => [:show, :edit, :update]
 
   def new
+    logger.info "UsersController::new"
     @user = User.new
   end
 
   def create
+    logger.info "UsersController::create"
     @user = User.new(params[:user])
     if @user.save
       flash[:notice] = "Account registered!"
@@ -17,14 +19,17 @@ class UsersController < ApplicationController
   end
 
   def show
+    logger.info "UsersController::show"
     @user = @current_user
   end
 
   def edit
+    logger.info "UsersController::edit"
     @user = @current_user
   end
 
   def update
+    logger.info "UsersController::update"
     @user = @current_user # makes our views "cleaner" and more consistent
     if @user.update_attributes(params[:user])
       flash[:notice] = "Account updated!"
