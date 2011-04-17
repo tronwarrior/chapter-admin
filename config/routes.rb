@@ -5,6 +5,7 @@ ChapterAdmin::Application.routes.draw do
   resources :users
   resource  :account, :controller => "users"
   resource  :user_session
+  get 'logout(.:format)' => 'user_session#destroy', :as => :logout
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

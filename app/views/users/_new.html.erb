@@ -1,0 +1,41 @@
+<div id="page">
+  <div id="content">
+     OTHER STUFF GOES HERE
+  </div>
+  <div class="sidebar">
+    <%= form_for(@user) do |f| %>
+      <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+          <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :fname, "First Name" %><br />
+        <%= f.text_field :fname %>
+      </div>
+      <div class="field">
+        <%= f.label :lname, "Last Name" %><br />
+        <%= f.text_field :lname %>
+      </div>
+      <div class="field">
+        <%= f.label :email, "Email Address" %><br />
+        <%= f.text_field :email %>
+      </div>
+      <div class="field">
+        <%= f.label :membership_identifier, "National HOG Number" %><br />
+        <%= f.text_field :membership_identifier %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Register" %>
+      </div>
+    <% end %>
+  </div>
+  <div style="clear: both;">&nbsp;</div>
+</div>
