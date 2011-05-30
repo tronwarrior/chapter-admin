@@ -7,7 +7,7 @@ development:
   host: localhost
 
 
-test:
+test: &test
   adapter: postgresql
   encoding: utf8
   database: chapteradmin_test
@@ -22,3 +22,6 @@ production:
   username: postgres
   password: whyme461
   host: localhost
+
+cucumber:
+  <<: *test
