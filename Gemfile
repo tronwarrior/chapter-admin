@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 # gem 'rails'
 # Bundle edge Rails instead:
 gem 'rails'
+gem 'rake', '~> 0.8.7'
 gem "authlogic"
 gem 'rails3-generators'
 gem 'pg'

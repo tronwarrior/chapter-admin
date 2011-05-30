@@ -61,7 +61,10 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     ffi (1.0.9)
+    ffi (1.0.9-x86-mingw32)
     gherkin (2.3.9)
+      json (>= 1.4.6)
+    gherkin (2.3.9-x86-mingw32)
       json (>= 1.4.6)
     i18n (0.5.0)
     json (1.5.1)
@@ -81,6 +84,7 @@ GEM
       dynamic_default_scoping (~> 0.0.3)
       multitenant
     nokogiri (1.4.4)
+    nokogiri (1.4.4-x86-mingw32)
     pg (0.11.0)
     pg (0.11.0-x86-mingw32)
     polyglot (0.3.1)
@@ -104,7 +108,7 @@ GEM
       activesupport (= 3.0.7)
       rake (>= 0.8.7)
       thor (~> 0.14.4)
-    rake (0.9.0)
+    rake (0.8.7)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -152,6 +156,7 @@ DEPENDENCIES
   pg
   rails
   rails3-generators
+  rake (~> 0.8.7)
   rspec
   rspec-rails
   spork
