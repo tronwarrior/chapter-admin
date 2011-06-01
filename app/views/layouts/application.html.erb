@@ -20,17 +20,14 @@ Released   : 20071004
   <!-- start body -->
   <body>
     <!-- start header -->
-
     <!-- start logo -->
     <div id="logo"><%= image_tag("../images/evhog-logo.png ", :size => "90x90") %> </div>
     <!-- end logo -->
-
     <!-- start menu -->
     <div id="menu">
       <%= yield :menu %>
     </div>
     <!-- end menu -->
-
     <!-- end header -->
 
     <!-- start wrapper -->
@@ -45,7 +42,7 @@ Released   : 20071004
 
     <!-- start footer -->
     <div id="footer">
-	<p>&copy;<%= Date.today.year %>  All Rights Reserved, WildFire Cybernetics LLC. &nbsp;&bull;&nbsp; Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+	<%= yield :footer %>
     </div>
     <!-- end footer -->
 

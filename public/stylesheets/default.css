@@ -172,14 +172,14 @@ img.right {
 	width: 438px;
 }
 
-.post {
+.section {
 	margin-bottom: 20px;
 	padding-bottom: 15px;
 	border-bottom: 1px dotted #949494;
 	line-height: 200%;
 }
 
-.post h1 {
+.section h1 {
 	font-weight: normal;
 }
 
@@ -269,7 +269,7 @@ img.right {
 #s {
 	margin: 0;
 	padding: 2px 2px;
-	width: 120px;
+	width: 180px;
 	height: 18px;
 	border: 1px solid #333333;
 	background: #000000;
