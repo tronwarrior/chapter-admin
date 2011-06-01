@@ -8,7 +8,7 @@ gem "authlogic"
 gem 'rails3-generators'
 gem 'pg'
 gem 'multitenant'
-gem 'calendar_date_select'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
