@@ -8,6 +8,8 @@ gem "authlogic"
 gem 'rails3-generators'
 gem 'pg'
 gem 'multitenant'
+gem 'calendar_date_select', :git => 'http://github.com/paneq/calendar_date_select.git', :branch => 'rails3test'
+gem "rails_config"
 
 
 # Use unicorn as the web server
