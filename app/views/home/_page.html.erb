@@ -6,39 +6,44 @@
   <div id="content">
 
     <div class="section">
-      <h1 class="title"><a href="#">[Chapter Title]</a></h1>
+      <h1 class="title"><%= link_to "[Chapter Title]", root_path %></h1>
+
       <p class="byline">
-        <small>[Date last updated] by <a href="#">[Updater]</a></small></p>
+        <small>[Date last updated] by <%= link_to "[Updater]", root_path %></small>
+      </p>
+
       <div class="entry">
-        <p><strong>Description</strong> is a free, fully standards-compliant CSS template designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>. This free template is released under a <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attributions 2.5</a> license, so you're pretty much free to do whatever you want with it  (even use it commercially) provided you keep the links in the footer intact. Have fun with it :)</p>
-        <p>This template is also available as a <a href="http://www.freewpthemes.net/preview/Description/">WordPress theme</a> at <a href="http://www.freewpthemes.net/">Free WordPress Themes</a>.</p>
-        <p class="links"><a href="#" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="#" class="comments">No Comments</a></p>
+        <p>
+          [Informational section]
+        </p>
+        <p>
+          [Informational section]
+        </p>
+        <p class="links">
+          <a href="#" class="more">Read More</a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#" class="comments">No Comments</a>
+        </p>
       </div>
     </div>
 
     <div class="segment">
-      <h1 class="title"><a href="#">[Dealership Title]</a></h1>
-      <p class="byline"><small>[Date last updated] by <a href="#">[Updater]</a></small></p>
+      <h1 class="title"><%= link_to "[Dealership Title]", root_path %></h1>
+      <p class="byline">
+        <small>[Date last updated] by <%= link_to "[Updater]", root_path %></small>
+      </p>
       <div class="entry">
-        <h3>An H3 Followed by a Blockquote:</h3>
-        <blockquote>
-          <p>
-            &#8220;Donec leo, vivamus nibh in augue at urna congue rutrum. Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh.&#8221;
-          </p>
-        </blockquote>
-        <h3>Bulleted List:</h3>
-        <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Phasellus nec erat sit amet nibh pellentesque congue.</li>
-                <li>Cras vitae metus aliquam risus pellentesque pharetra.</li>
-        </ul>
-        <h3>Numbered List:</h3>
-        <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                  <li>Phasellus nec erat sit amet nibh pellentesque congue.</li>
-                <li>Cras vitae metus aliquam risus pellentesque pharetra.</li>
-        </ol>
-        <p class="links"><a href="#" class="more">Read More</a> &nbsp;&nbsp;&nbsp; <a href="#" class="comments">No Comments</a></p>
+        <p>
+          [Informational section]
+        </p>
+        <p>
+          [Informational section]
+        </p>
+        <p class="links">
+          <a href="#" class="more">Read More</a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#" class="comments">No Comments</a>
+        </p>
       </div>
   </div>
 </div>
@@ -51,40 +56,44 @@
     <li>
       <h2>Primary Officers</h2>
       <ul>
-        <li><a href="#">[Director]</a></li>
-        <li><a href="#">[Assistant Director]</a></li>
-        <li><a href="#">[Secretary]</a></li>
-        <li><a href="#">[Treasurer]</a></li>
+        <li><%= link_to "[Director]", root_path %></li>
+        <li><%= link_to "[Assistant Director]", root_path %></li>
+        <li><%= link_to "[Secretary]", root_path %></li>
+        <li><%= link_to "[Treasurer]", root_path %></li>
       </ul>
     </li>
     <li>
       <h2>Discretionary Officers</h2>
       <ul>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
+        <li><%= link_to "[Activities]", root_path %></li>
+        <li><%= link_to "[Membership]", root_path %></li>
+        <li><%= link_to "[Safety]", root_path %></li>
+        <li><%= link_to "[Photographer]", root_path %></li>
+        <li><%= link_to "[Historian]", root_path %></li>
+        <li><%= link_to "[Editor]", root_path %></li>
+        <li><%= link_to "[Webmaster]", root_path %></li>
       </ul>
     </li>
     <li>
       <h2>Road Captains</h2>
       <ul>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
-        <li><a href="#">[   ]</a></li>
+        <li><%= link_to "[Road Captain 1]", root_path %></li>
+        <li><%= link_to "[Road Captain 2]", root_path %></li>
+        <li><%= link_to "[Road Captain 3]", root_path %></li>
+        <li><%= link_to "[Road Captain 4]", root_path %></li>
+        <li><%= link_to "[Road Captain 5]", root_path %></li>
+        <li><%= link_to "[Road Captain 6]", root_path %></li>
+        <li><%= link_to "[Road Captain 7]", root_path %></li>
+        <li><%= link_to "[Road Captain 8]", root_path %></li>
       </ul>
     </li>
     <li>
       <h2>Ladies of Harley</h2>
       <ul>
-        <li><a href="#">[About]</a></li>
-        <li><a href="#">[Blog]</a></li>
-        <li><a href="#">[Activities]</a></li>
+        <li><%= link_to "[About]", root_path %></li>
+        <li><%= link_to "[Activities]", root_path %></li>
+        <li><%= link_to "[Joining]", root_path %></li>
+        <li><%= link_to "[Blog]", root_path %></li>
       </ul>
     </li>
   </ul>
@@ -97,17 +106,8 @@
     <ul>
       <li>
         <h2>Search</h2
-        <%= render "common/search_form" %>
         <!-- search form -->
-        <!--
-        <form id="searchform" method="get" action="#">
-          <div>
-            <input type="text" name="s" id="s" size="15" value="" />
-            <br />
-            <input type="submit" value="Search" id="x" />
-          </div>
-        </form>
-        -->
+        <%= render "common/search_form" %>
       </li>
       <!-- calendar small -->
       <li>
@@ -119,10 +119,10 @@
       <li>
         <h2>Ride Planning</h2>
         <ul>
-          <li><a href="#">Maps</a></li>
-          <li><a href="#">Weather</a></li>
-          <li><a href="#">Lodging</a></li>
-          <li><a href="#">Fuel</a></li>
+          <li><%= link_to "Maps", root_path %></li>
+          <li><%= link_to "Weather", root_path %></li>
+          <li><%= link_to "Lodging", root_path %></li>
+          <li><%= link_to "Fuel", root_path %></li>
         </ul>
       </li>
     </ul>
