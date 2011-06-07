@@ -1,21 +1,16 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+# gem 'rails'
 # Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'authlogic'
-gem "rails3-generators"
-gem 'pg', '0.9.0'
+gem 'rails'
+gem 'rake', '~> 0.8.7'
+gem "authlogic"
+gem 'rails3-generators'
+gem 'pg'
+gem 'multitenant'
+gem 'calendar_date_select', :git => 'http://github.com/paneq/calendar_date_select.git', :branch => 'rails3test'
+gem "rails_config"
 
-group :cucumber do
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'cucumber-rails'
-  gem 'cucumber', '0.7.3'
-  gem 'rspec-rails', '>= 2.0.0.beta.10'
-  gem 'launchy'    # So you can do Then show me the page
-end
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -36,6 +31,17 @@ end
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :development, :test do
+  gem 'rspec'
+  gem 'webrat'
+end
+
+group :cucumber do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'rspec-rails'
+  gem 'spork'
+  gem 'launchy'    # So you can do Then show me the page
+end
