@@ -10,6 +10,7 @@ gem 'pg'
 gem 'multitenant'
 gem 'calendar_date_select', :git => 'http://github.com/paneq/calendar_date_select.git', :branch => 'rails3test'
 gem "rails_config"
+gem 'nokogiri'
 
 
 # Use unicorn as the web server
