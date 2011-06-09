@@ -99,7 +99,7 @@ img.right {
 	width: 880px;
 	height: 42px;
 	margin: 0 auto;
-	padding-top: 10px;
+	padding-top: 40px;
 }
 
 #menu ul {
@@ -132,7 +132,7 @@ img.right {
 	color: #FFFFFF;
 }
 
-#menu .current_page_item a {
+#menu .current_page_menu_item a {
 	background: url(../images/img05.jpg) repeat-x;
 	margin: 0 3px 0 0;
 	padding: 8px 15px 10px 15px;
