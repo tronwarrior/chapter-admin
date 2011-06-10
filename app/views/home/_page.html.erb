@@ -1,78 +1,18 @@
-<!----------------------------------------------------------------------------->
 <!-- start page -->
 <div id="page">
 
   <!-- start content -->
   <div id="content">
-
-    <div class="section">
-      <h1 class="title"><%= link_to "[Chapter Title]", root_path %></h1>
-
-      <p class="byline">
-        <small>[Date last updated] by <%= link_to "[Updater]", root_path %></small>
-      </p>
-
-      <div class="entry">
-        <p>
-          [Informational section]
-        </p>
-        <p>
-          [Informational section]
-        </p>
-        <p class="links">
-          <a href="#" class="more">Read More</a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="#" class="comments">No Comments</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="segment">
-      <h1 class="title"><%= link_to "[Dealership Title]", root_path %></h1>
-      <p class="byline">
-        <small>[Date last updated] by <%= link_to "[Updater]", root_path %></small>
-      </p>
-      <div class="entry">
-        <p>
-          [Informational section]
-        </p>
-        <p>
-          [Informational section]
-        </p>
-        <p class="links">
-          <a href="#" class="more">Read More</a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="#" class="comments">No Comments</a>
-        </p>
-      </div>
+    <%= render 'common/chapter_main' %>
+    <%= render 'common/dealership_main' %>
   </div>
-</div>
-<!----------------------------------------------------------------------------->
-
-<!----------------------------------------------------------------------------->
   <!-- start sidebar 1 -->
   <div id="sidebar1" class="sidebar">
   <ul>
     <li>
-      <h2>Primary Officers</h2>
-      <ul>
-        <li><%= link_to "[Director]", root_path %></li>
-        <li><%= link_to "[Assistant Director]", root_path %></li>
-        <li><%= link_to "[Secretary]", root_path %></li>
-        <li><%= link_to "[Treasurer]", root_path %></li>
-      </ul>
+      <%= render 'common/primary_officers' %>
     </li>
     <li>
-      <h2>Discretionary Officers</h2>
-      <ul>
-        <li><%= link_to "[Activities]", root_path %></li>
-        <li><%= link_to "[Membership]", root_path %></li>
-        <li><%= link_to "[Safety]", root_path %></li>
-        <li><%= link_to "[Photographer]", root_path %></li>
-        <li><%= link_to "[Historian]", root_path %></li>
-        <li><%= link_to "[Editor]", root_path %></li>
-        <li><%= link_to "[Webmaster]", root_path %></li>
-      </ul>
     </li>
     <li>
       <h2>Road Captains</h2>

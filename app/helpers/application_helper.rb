@@ -1,7 +1,6 @@
 module ApplicationHelper
     def toggle_element_class(id, class_name)
     logger.info("---->>>> Setting " + id.to_s + " to class " + class_name.to_s)
- 
     javascript_tag("$('#{id}').addClassName('#{class_name}')");
   end
 
