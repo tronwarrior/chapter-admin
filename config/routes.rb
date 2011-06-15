@@ -1,4 +1,6 @@
 ChapterAdmin::Application.routes.draw do
+  resources :tenants
+
   resources :user_sessions
 
   root      :to => "home#index"

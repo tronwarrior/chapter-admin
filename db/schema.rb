@@ -14,6 +14,8 @@ ActiveRecord::Schema.define(:version => 20110530050324) do
 
   create_table "tenants", :force => true do |t|
     t.string   "name"
+    t.string   "title"
+    t.string   "address"
     t.string   "accounting"
     t.string   "metadata"
     t.datetime "created_at"
